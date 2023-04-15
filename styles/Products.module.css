@@ -1,0 +1,102 @@
+/*
+
+route: Products/
+
+Style for all the products
+
+*/
+.products_wrapper {
+    display: grid;
+    box-sizing: border-box;
+    padding: 30px;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-gap: 0s;
+    margin: 10px;
+
+}
+
+
+/*
+route: products/[id]
+Style for individual Product Item
+
+/*/
+
+.card_wrapper {
+    box-sizing: border-box;
+    padding: 20px;
+    max-height: calc(100% - 100px);
+    border-radius: 2px;
+    border: grey solid;
+    margin: 10px auto;
+    overflow-y: hidden;
+}
+
+.cardImage {
+    text-align: center;
+
+}
+
+.cardInfo h2 {
+    /* margin: 10px auto; */
+    text-align: center;
+}
+
+.qnt {
+    display: flex;
+    justify-content: center;
+}
+
+
+.prd_btn_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.prd_btn_wrapper button {
+    margin: 10px;
+}
+
+.prd_footer {
+    position: relative;
+    bottom: 0px;
+
+}
+
+/**
+Cart Component
+**/
+
+.cartWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 4px auto;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartItem {
+    /* background-color: #9fabb4; */
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid gray;
+
+}
+
+.cartItem img {
+
+    border-radius: 8px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    object-fit: cover;
+
+
+
+}
